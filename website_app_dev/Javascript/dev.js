@@ -3,10 +3,10 @@
 /*
 Creating a database for all the games. This inlcudes;
   - The  name of  the game
-  - The image of t he game
-  - The price  of the game
+  - The image of the game
+  - The price of the game
   - The game release date
-   The game age restriction 
+  - The game age restriction 
   - The stock availability of a game
   - Description of the game
 */
@@ -19,7 +19,7 @@ const gamesDatabase = [
       releaseDate: "2020-12-10",
       ageRestriction: "R18+",
       stockAvailability: true,
-      description: "Cyberpunk 2077 is an open-world, ackhtion adventure RPG set in the dystopian Night City. Players assume the role of V, a mercenary with customizable cybernetic enhancements, exploring a vast urban landscape filled with dynamic missions, complex characters, and an array of futuristic weaponry and technology"
+      description: "Cyberpunk 2077 is an open-world, action adventure RPG set in the dystopian Night City. Players assume the role of V, a mercenary with customizable cybernetic enhancements, exploring a vast urban landscape filled with dynamic missions, complex characters, and an array of futuristic weaponry and technology"
   },
   {
       name: "Helldivers II",
@@ -55,7 +55,7 @@ const gamesDatabase = [
       releaseDate: "2020-07-23",
       ageRestriction: "M17+",
       stockAvailability: true,
-      description: "Crysis isa first-person shooter set in a near-future where players assume the role of a soldier with a nanosuit granting superhuman abilities. The game features advanced graphics, destructible environments, and strategic combat against alien and human enemies on a tropical island, emphasizing tactical gameplay and adaptive strategies."
+      description: "Crysis is a first-person shooter set in a near-future where players assume the role of a soldier with a nanosuit granting superhuman abilities. The game features advanced graphics, destructible environments, and strategic combat against alien and human enemies on a tropical island, emphasizing tactical gameplay and adaptive strategies."
   },
   {
     name: "It Takes Two",
@@ -118,7 +118,7 @@ const gamesDatabase = [
     releaseDate: "2017-09-29",
     ageRestriction: "E10+",
     stockAvailability: true,
-    description: "Cuphead is a run-and-gun action game witha a a distinctive 1930s cartoon art style. Players control Cuphead and Mugman as they battle through visually stunning, hand-drawn levels filled with challenging bosses. The game emphasizes precise gameplay, cooperative multiplayer, and a nostalgic aesthetic, offering a unique blend of difficulty and charm."
+    description: "Cuphead is a run-and-gun action game with a distinctive 1930s cartoon art style. Players control Cuphead and Mugman as they battle through visually stunning, hand-drawn levels filled with challenging bosses. The game emphasizes precise gameplay, cooperative multiplayer, and a nostalgic aesthetic, offering a unique blend of difficulty and charm."
   },
   {
     name: "Witcher 3",
@@ -196,13 +196,13 @@ const gamesDatabase = [
 ];
 
 /*
-Creating a way f or the html code to retrive from the database and display it.
-This includes for the search function, viewing popular this week section, filtering
-specific game consoles and all games that are available. 
-  - The Event Listener waits for prompt before retriving data
-  - If statement there for if  it exists, it will show the data on html pages via the database
-  - It will loop through to filter speficic game data
-  - If gameis not avilable it will display 'Out of Stock'
+Implementing a method for HTML to retrieve and display data from a database 
+includes search functionality, a "popular This Week" section, filtering by 
+specific game concoles, and display a;; available games. The process involves
+  -An event listener that waits for user input before fetching data.
+  -An if statement to check for data existence and display it on HTML pages.
+  -A loop to filter specific game data.
+  -Displaying 'Out of Stock' For unavailbale games.
 */
 
 document.addEventListener('DOMContentLoaded', () => {
