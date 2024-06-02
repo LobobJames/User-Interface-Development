@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+</head>
+<body>
+    <!-- 
+        Navbar, the image will be filled later -->
+    <div class="navbar">
+        <div class="logo">
+            <a href="Homepage.html">
+                <img src="images/Navbarlogo.png" alt="Logo" class="logo-image">
+            </a>
+        </div>
+        <ul class="middle-menu">
+            <li><a href="Homepage.html">Home</a></li>
+            <li><a href="Search-results.html?console=PC">PC</a></li>
+            <li><a href="Search-results.html?console=Xbox">Xbox</a></li>
+            <li><a href="Search-results.html?console=Playstation">Playstation</a></li>
+            <li><a href="Search-results.html?console=Nintendo">Nintendo</a></li>
+        </ul>
+        <div class="right-menu">
+            <a href="#">Register or Sign In</a>
+            <a href="#"><img src="images/Cart.png" alt="Cart" style="width: 24px; height: 24px;"></a>
+        </div>
+    </div>
+
+    <!-- 
+        Product Details Section , remeber change the font, add age restriction 
+    -->
+    <div class="container">
+        <div class="trailer">
+            <iframe id="game-trailer" src="" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="product-details-section">
+            <div class="product-info">
+                <div class="product-header">
+                    <h2 id="game-title" class="bold-game-title"></h2>
+                    <h2 id="age-restriction" class="bold-game-title age-restriction"></h2>
+                </div>
+                <p id="release-date" class="small-text"></p>
+                <p id="stock-status" class="small-text"></p>
+                <p id="game-description"></p>
+                <div class="product-actions">
+                    <button class="wishlist-button">Add to Wishlist</button>
+                    <button class="cart-button">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section same with homepage -->
+    <div class="footer-section">
+        <div class="logo">
+            <img src="images/logo.png" alt="GD Games Logo">
+            <p>GD Games</p>
+            <p>Enter the Future of Gaming</p>
+        </div>
+        <p>Follow Us</p>
+        <div class="social-icons">
+            <a href=""><img src="images/instagram.png" alt="Instagram"></a>
+            <a href=""><img src="images/twitter.png" alt="Twitter"></a>
+            <a href=""><img src="images/facebook.png" alt="Facebook"></a>
+        </div>
+        <div class="footer-links">
+            <a href="">Privacy Policy</a>
+            <a href="">Terms of Use</a>
+            <a href="">Refund Policy</a>
+            <a href="">Legal</a>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 All Rights Reserved</p>
+        </div>
+    </div>
+
+    <script src="Javascript/dev.js" type="module"></script>
+</body>
+</html>

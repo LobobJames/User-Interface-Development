@@ -1,31 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GD Games HomePage</title>
+    <title>GD Games Homepage</title>
     <link rel="stylesheet" href="CSS/styles.css">
 </head>
-
 <body>
     <!-- Base Navbar code, Images will be inserted later -->
     <div class="navbar">
-        <div class="nav-Logo">
-            <a href="Homepage.html">
-                <img src="images/Navbarlogo.png" alt="Logo" class="logo-image">
-            </a>
+        <div class="logo">
+            <img src="images/Navbarlogo.png" alt="GD Games Logo">
         </div>
-        <ul class="nav-Menu">
-            <li><a href="Homepage.html">Home</a></li>
-            <li><a href="">PC</a></li>
-            <li><a href="">Xbox</a></li>
-            <li><a href="">Playstation</a></li>
-            <li><a href="">Nintendo</a></li>
+        <ul class="middle-menu">
+            <li><a href="">Home</a></li>
+            <li><a href="Search-results.html?console=PC">PC</a></li>
+            <li><a href="Search-results.html?console=Xbox">Xbox</a></li>
+            <li><a href="Search-results.html?console=Playstation">Playstation</a></li>
+            <li><a href="Search-results.html?console=Nintendo">Nintendo</a></li>
         </ul>
-        <div class="nav-Rightside">
+        <div class="right-menu">
             <a href="">Register or Sign In</a>
-            <a href=""><img src="images/cart.png" alt="Cart" style="width: 24px; height: 24px;"></a>
+            <a href=""><img src="images/Cart.png" alt="Cart" style="width: 24px; height: 24px;"></a>
         </div>
     </div>
 
@@ -34,8 +30,8 @@
     Images will be uploaded later 
     -->
     <div class="search-section">
-        <input type="text" id="search-bar" placeholder="Search..." style="margin-bottom: 10px;">
-        <select id="console-selection-dropdown">
+        <input type="text" id="search-bar" placeholder="Search games..." style="margin-bottom: 10px;">
+        <select id="console-dropdown">
             <option value="">Select Console</option>
             <option value="PC">PC</option>
             <option value="Xbox">Xbox</option>
@@ -53,12 +49,12 @@
         <div class="product-list" id="popular-this-week">
             <!-- Games will be underneath this section here with product list -->
         </div>
-        <div class="footer">
-            <a href="">See all</a>
+        <div class="footerbottomright">
+            <a href="http://localhost:8000/website_app_dev/Search-results.html?search=&console=">See all</a>
         </div>
     </div>
 
-    <!-- Product Category Section with created list of filter
+   <!-- Product Category Section with created list of filter
         - Shop All
         - PC Games
         - Nintendo 
@@ -69,7 +65,7 @@
         <div class="heading">
             <h1>Product Category</h1>
         </div>
-        <div class="footer-right">
+        <div class="footer">
             <ul>
                 <li>
                     <img src="images/Shopall.png" alt="Shop All Logo">
@@ -77,19 +73,19 @@
                 </li>
                 <li>
                     <img src="images/PC.png" alt="PC Games Logo">
-                    <a href="">PC Games</a>
+                    <a href="Search-results.html?console=PC">PC Games</a>
                 </li>
                 <li>
                     <img src="images/Nintendo.png" alt="Nintendo Logo">
-                    <a href="">Nintendo</a>
+                    <a href="Search-results.html?console=Nintendo">Nintendo</a>
                 </li>
                 <li>
                     <img src="images/Xbox.png" alt="Xbox Logo">
-                    <a href="">Xbox</a>
+                    <a href="Search-results.html?console=Xbox">Xbox</a>
                 </li>
                 <li>
-                    <img src="images/PlayStation.png" alt="PlayStation Logo">
-                    <a href="">Playstation</a>
+                    <img src="images/Playstation.png" alt="PlayStation Logo">
+                    <a href="Search-results.html?console=Playstation">Playstation</a>
                 </li>
             </ul>
         </div>
@@ -103,10 +99,10 @@
             <h1>New Arrivals</h1>
         </div>
         <div class="product-list" id="new-arrivals">
-            <!-- Games will be displayed underneath here -->
+             <!-- Games will be displayed underneath here -->
         </div>
-        <div class="footer">
-            <a href="#">See all</a>
+        <div class="footerbottomright">
+            <a href="http://localhost:8000/website_app_dev/Search-results.html?search=&console=">See all</a>
         </div>
     </div>
 
@@ -142,7 +138,7 @@
             <p>Enter the Future of Gaming</p>
         </div>
         <p>Follow Us</p>
-        <div class="social-media-icons">
+        <div class="social-icons">
             <a href=""><img src="images/instagram.png" alt="Instagram"></a>
             <a href=""><img src="images/twitter.png" alt="Twitter"></a>
             <a href=""><img src="images/facebook.png" alt="Facebook"></a>
@@ -160,5 +156,4 @@
 
     <script src="Javascript/dev.js" type="module"></script>
 </body>
-
 </html>
