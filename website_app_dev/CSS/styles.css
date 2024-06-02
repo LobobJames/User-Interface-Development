@@ -1,0 +1,521 @@
+body {
+  font-family: Arial, sans-serif; /* Base font for now, we need to download figma font */
+  margin: 0;
+  padding: 0;
+}
+
+/* Simple Nav Bar design, we need to add figma line similar to prototype */
+.navbar { 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 10px 20px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 14px 20px;
+  text-align: center;
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.navbar .logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.navbar .middle-menu {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar .middle-menu li {
+  margin: 0 10px;
+}
+
+.navbar .right-menu {
+  display: flex;
+  align-items: center;
+}
+
+.navbar .right-menu a {
+  margin-left: 10px;
+}
+
+/*1st attempt at responsive mobile version of code for Navbar*/
+@media (max-width: 600px) {
+  .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+  .navbar .middle-menu {
+      flex-direction: column;
+      width: 100%;
+      align-items: center;
+  }
+  .navbar .middle-menu li {
+      margin: 10px 0;
+  }
+  .navbar .right-menu {
+      width: 100%;
+      justify-content: flex-end;
+      margin-top: 10px;
+  }
+}
+
+/*
+For the search section with hero image, need to download figma hero image
+Left a black url that gives us plain white background
+*/
+.search-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url('') no-repeat center center/cover;
+  color: white;
+  text-align: center;
+}
+
+.search-section h1 {
+  font-size: 4rem;
+  margin: 0.5rem;
+}
+
+.search-section p {
+  font-size: 1.5rem;
+  margin: 0.5rem;
+}
+
+.search-section button {
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  color: white;
+  background-color: #007BFF;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.search-section button:hover {
+  background-color: #0056b3;
+}
+
+/*1st attempt at responsive mobile version of code for Search Section with Hero Image*/
+@media (max-width: 600px) {
+  .search-section h1 {
+      font-size: 2.5rem;
+  }
+  .search-section p {
+      font-size: 1.2rem;
+  }
+  .search-section button {
+      font-size: 1rem;
+      padding: 8px 16px;
+  }
+}
+
+.container {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*Tried to use percentage and rem for responsive mobile design*/
+.heading {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.heading h1 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.heading a {
+  font-size: 1rem;
+  color: #007BFF;
+  text-decoration: none;
+}
+
+.heading a:hover {
+  text-decoration: underline;
+}
+
+/*Product list in grid format and % instead of px for responsiveness*/
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+/*Need to somehow make border similar to figma design*/
+.product-item {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+.product-item img {
+  width: 100%;
+  height: 200px; /* Set a fixed height for all images, not sure if it will work on mobile */
+  object-fit: cover;
+}
+
+.product-details {
+  padding: 15px;
+}
+
+.product-details h2 {
+  font-size: 1.2rem;
+  margin: 10px 0;
+  color: #333;
+}
+
+.product-details p {
+  font-size: 1rem;
+  margin: 5px 0;
+  color: #007BFF;
+}
+
+/* Need to add more styles for see all*/
+.footerbottomright {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+.footerbottomright a {
+  font-size: 1rem;
+  color: #007BFF;
+  text-decoration: none;
+}
+
+.footerbottomright a:hover {
+  text-decoration: underline;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.footer ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+/* Need to add more margin, as it looks to squished */
+.footer ul li {
+  text-align: center;
+  font-size: 1rem;
+  margin: 0 10px;
+}
+
+.footer ul li a {
+  color: #007BFF;
+  text-decoration: none;
+}
+
+/* Maybe get rid of underline, not in our figma design */
+.footer ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer ul li img {
+  width: 50px;
+  height: 50px;
+  display: block;
+  margin: 0 auto 10px;
+}
+
+.heading .view-icons {
+  display: flex;
+  align-items: center;
+}
+
+/* Make the social media icons with rem or %, not responsive on mobile*/
+.heading .view-icons img {
+  margin-left: 10px;
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+}
+
+.faq-heading {
+  font-size: 2rem;
+  margin-top: 40px;
+  text-align: center;
+}
+
+.faq-text {
+  font-size: 1.2rem;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.faq-button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.faq-button {
+  width: 80%;
+  max-width: 600px;
+  padding: 15px;
+  background-color: #f1f1f1;
+  border: none;
+  text-align: left;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  margin-bottom: 10px; /* Spacing between buttons, maybe need more */
+}
+
+.faq-button img { /* We need to add arrow button and change to white color*/
+  width: 24px;
+  height: 24px;
+}
+
+.more-questions-heading {
+  font-size: 1.5rem;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.more-questions-text {
+  font-size: 1rem;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.contact-button {
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  color: white;
+  background-color: #007BFF;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.contact-button:hover { /*Add more to button style like similar to our figma design*/
+  background-color: #0056b3;
+}
+
+.footer-section {
+  background-color: #6a0dad;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-section .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.footer-section .logo img { /*Use rem or %, won't be responsive on mobile*/
+  width: 50px;
+  height: 50px;
+}
+
+.footer-section .social-icons {
+  margin: 20px 0;
+}
+
+.footer-section .social-icons img {
+  width: 50px;
+  height: 50px;
+  margin: 0 15px;
+}
+
+.footer-section .footer-links {
+  margin: 20px 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer-section .footer-links a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.footer-section .footer-links a:hover {
+  text-decoration: underline;
+}
+
+.footer-section .footer-bottom {
+  margin-top: 20px;
+  border-top: 1px solid white;
+  padding-top: 10px;
+}
+
+.logo img { /* Duplicate code, delete one */
+  width: 100px;
+  height: auto;
+}
+
+
+.logo img { /*Duplicate code*/
+  width: 100px;
+  height: auto;
+}
+
+/* Styles for product page */
+.trailer {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Tried % and rem but doesn't work on desktop */
+.trailer iframe {
+  width: 1200px;
+  height: 600px; /* Adjust height as needed */
+}
+
+.product-details-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 20px;
+  width: 80%;
+  margin: 0 auto; /* Center the product details section */
+}
+
+.product-info { 
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.product-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.product-images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.thumbnail {
+  width: 100px;
+  height: auto;
+  cursor: pointer;
+}
+
+.bold-game-title {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* Add small font style from Google fonts or Figma */
+.small-text {
+  font-size: 1rem;
+}
+
+.in-stock {
+  color: green;
+}
+
+.age-restriction { /* We need also another one for out of stock, but red */
+  color: red;
+  text-align: right;
+}
+
+.product-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.wishlist-button, .cart-button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.wishlist-button {
+  background-color: #6a0dad;
+}
+
+.cart-button { /* Make it hollow and have same border style from Figma */
+  background-color: #007BFF;
+}
+
+.footer-section .logo img { /* Change to % or rem for responsiveness */
+  width: 50px;
+  height: 50px;
+}
+
+.footer-section .social-icons img {
+  width: 30px;
+  height: 30px;
+  margin: 0 10px;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.footer-bottom {
+  margin-top: 20px;
+  border-top: 1px solid white;
+  padding-top: 10px;
+}
+
+/* New hover styles for game cards */
+.product-item {
+  transition: box-shadow 0.3s ease, color 0.3s ease;
+}
+
+.product-item:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.product-item:hover h2, .product-item:hover p {
+  color: #007BFF; /* Change the hover color */
+}
