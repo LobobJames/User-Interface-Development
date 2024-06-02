@@ -9,24 +9,25 @@
 </head>
 
 <body>
-    <!-- Base Navbar code, Images will inserted later -->
+    <!-- Base Navbar code, Images will be inserted later -->
     <div class="navbar">
         <div class="nav-Logo">
-            <a href="">GD Games Logo</a>
+            <a href="Homepage.html">
+                <img src="images/Navbarlogo.png" alt="Logo" class="logo-image">
+            </a>
         </div>
         <ul class="nav-Menu">
-            <li><a href="">Home</a></li>
+            <li><a href="Homepage.html">Home</a></li>
             <li><a href="">PC</a></li>
             <li><a href="">Xbox</a></li>
             <li><a href="">Playstation</a></li>
             <li><a href="">Nintendo</a></li>
+        </ul>
         <div class="nav-Rightside">
             <a href="">Register or Sign In</a>
             <a href=""><img src="images/cart.png" alt="Cart" style="width: 35px; height: 35px;"></a>
         </div>
     </div>
-
-
 
     <!-- 
     Hero Image, Search function and Dropdown option section
@@ -40,21 +41,21 @@
             <option value="Xbox">Xbox</option>
             <option value="Playstation">Playstation</option>
             <option value="Nintendo">Nintendo</option>
+        </select>
         <button id="search-button">Search</button>
     </div>
 
-    <!-- 
-        Popular This Week with Game card display section
-    -->
+    <!-- Popular This Week with Game card display section -->
     <div class="container">
         <div class="heading">
             <h1>Popular this week</h1>
         </div>
         <div class="product-list" id="popular-this-week">
-            <!-- Games will underneath this section here with product list -->
+            <!-- Games will be underneath this section here with product list -->
         </div>
         <div class="footer">
             <a href="">See all</a>
+        </div>
     </div>
 
     <!-- Product Category Section with created list of filter
@@ -63,7 +64,7 @@
         - Nintendo 
         - Xbox
         - Playstation
-     -->
+    -->
     <div class="container">
         <div class="heading">
             <h1>Product Category</h1>
@@ -71,8 +72,8 @@
         <div class="footer-right">
             <ul>
                 <li>
-                    <img src="images/shop.png" alt="Shop All Logo">
-                    <a href="#">Shop All</a>
+                    <img src="images/Shopall.png" alt="Shop All Logo">
+                    <a href="">Shop All</a>
                 </li>
                 <li>
                     <img src="images/PC.png" alt="PC Games Logo">
@@ -83,18 +84,19 @@
                     <a href="">Nintendo</a>
                 </li>
                 <li>
-                    <img src="images/Sbox.png" alt="Xbox Logo">
+                    <img src="images/Xbox.png" alt="Xbox Logo">
                     <a href="">Xbox</a>
                 </li>
                 <li>
                     <img src="images/PlayStation.png" alt="PlayStation Logo">
                     <a href="">Playstation</a>
                 </li>
+            </ul>
         </div>
     </div>
 
     <!-- 
-        New Arrivals Section with gamecard display
+        New Arrivals Section with gamecard display 
     -->
     <div class="container">
         <div class="heading">
@@ -104,7 +106,7 @@
             <!-- Games will be displayed underneath here -->
         </div>
         <div class="footer">
-            <a href="">See all</a>
+            <a href="#">See all</a>
         </div>
     </div>
 
@@ -158,4 +160,5 @@
 
     <script src="Javascript/dev.js" type="module"></script>
 </body>
+
 </html>
