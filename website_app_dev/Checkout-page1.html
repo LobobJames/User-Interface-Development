@@ -1,0 +1,81 @@
+Checkout page 1:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Page 1</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+</head>
+<body>
+    <!-- Navbar similar to homepage -->
+    <div class="navbar">
+        <div class="logo">
+            <a href="Homepage.html">MyLogo</a>
+        </div>
+        <ul class="middle-menu">
+            <li><a href="Homepage.html">Home</a></li>
+            <li><a href="Search-results.html?console=PC">PC</a></li>
+            <li><a href="Search-results.html?console=Xbox">Xbox</a></li>
+            <li><a href="Search-results.html?console=Playstation">Playstation</a></li>
+            <li><a href="Search-results.html?console=Nintendo">Nintendo</a></li>
+        </ul>
+        <div class="right-menu">
+            <a href="">Register or Sign In</a>
+            <a href="Shopping-cart.html" id="cart-icon"><img src="images/Cart.png" alt="Cart" style="width: 24px; height: 24px;"></a>
+        </div>
+    </div>
+
+    <!-- 
+        Checkout Section make sure everything spell right
+    -->
+    <div class="checkout-container">
+        <h1 class="checkout-heading">Checkout</h1>
+        <div class="checkout-section">
+            <h2>Name</h2>
+            <input type="text" placeholder="First Name">
+            <input type="text" placeholder="Last Name">
+        </div>
+        <div class="checkout-section">
+            <h2>Address</h2>
+            <input type="text" placeholder="Street Address">
+            <div class="address-inputs">
+                <input type="text" placeholder="Apartment/Unit">
+                <input type="text" placeholder="Street Number">
+            </div>
+        </div>
+        <div class="checkout-section">
+            <h2>City & Postcode</h2>
+            <input type="text" placeholder="City">
+            <input type="text" placeholder="Postcode">
+        </div>
+        <button class="continue-button" onclick="window.location.href='Checkout-page2.html'">Continue</button>
+    </div>
+
+    <!-- Footer Section similar to homepage -->
+    <div class="footer-section">
+        <div class="logo">
+            <img src="images/Footer Logo.png" alt="GD Games Logo">
+            <p>GD Games</p>
+            <p>Enter the Future of Gaming</p>
+        </div>
+        <p>Follow Us</p>
+        <div class="social-icons">
+            <a href=""><img src="images/instagram.png" alt="Instagram"></a>
+            <a href=""><img src="images/twitter.png" alt="Twitter"></a>
+            <a href=""><img src="images/facebook.png" alt="Facebook"></a>
+        </div>
+        <div class="footer-links">
+            <a href="">Privacy Policy</a>
+            <a href="">Terms of Use</a>
+            <a href="">Refund Policy</a>
+            <a href="">Legal</a>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 All Rights Reserved</p>
+        </div>
+    </div>
+
+    <script src="Javascript/dev.js" type="module"></script>
+</body>
+</html>

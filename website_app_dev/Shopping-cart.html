@@ -1,0 +1,102 @@
+Shopping cart final add some notes: 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+</head>
+<body>
+    <!-- Navbar similar to homepage -->
+    <div class="navbar">
+        <div class="logo">
+            <a href="Homepage.html">MyLogo</a>
+        </div>
+        <ul class="middle-menu">
+            <li><a href="Homepage.html">Home</a></li>
+            <li><a href="Search-results.html?console=PC">PC</a></li>
+            <li><a href="Search-results.html?console=Xbox">Xbox</a></li>
+            <li><a href="Search-results.html?console=Playstation">Playstation</a></li>
+            <li><a href="Search-results.html?console=Nintendo">Nintendo</a></li>
+        </ul>
+        <div class="right-menu">
+            <a href="">Register or Sign In</a>
+            <a href="Shopping-cart.html" id="cart-icon"><img src="images/Cart.png" alt="Cart" style="width: 24px; height: 24px;"></a>
+        </div>
+    </div>
+
+    <!-- 
+        Shopping Cart Section  Ps:not work for a thousand times...
+    -->
+    <div class="container">
+        <div class="heading">
+            <h1>Shopping Cart</h1>
+        </div>
+        <table class="cart-table">
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Cart Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <img src="images/alanwakeremast.webp" alt="Alan Wake" class="cart-product-image">
+                        <span>Alan Wake</span>
+                    </td>
+                    <td>$15.00</td>
+                    <td><input type="number" value="1" min="1"></td>
+                    <td>$15.00</td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="images/alanwake2.avif" alt="Alan Wake II" class="cart-product-image">
+                        <span>Alan Wake II</span>
+                    </td>
+                    <td>$91.00</td>
+                    <td><input type="number" value="1" min="1"></td>
+                    <td>$91.00</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="cart-summary-container">
+            <div class="cart-total">
+                <h2>Total: $106.00</h2>
+            </div>
+            <div class="checkout-button-container">
+                <button class="proceed-checkout-button" onclick="window.location.href='Checkout-page1.html'">Proceed to Checkout</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section similar to homepage -->
+    <div class="footer-section">
+        <div class="logo">
+            <img src="images/Footer Logo.png" alt="GD Games Logo">
+            <p>GD Games</p>
+            <p>Enter the Future of Gaming</p>
+        </div>
+        <p>Follow Us</p>
+        <div class="social-icons">
+            <a href=""><img src="images/instagram.png" alt="Instagram"></a>
+            <a href=""><img src="images/twitter.png" alt="Twitter"></a>
+            <a href=""><img src="images/facebook.png" alt="Facebook"></a>
+        </div>
+        <div class="footer-links">
+            <a href="">Privacy Policy</a>
+            <a href="">Terms of Use</a>
+            <a href="">Refund Policy</a>
+            <a href="">Legal</a>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 All Rights Reserved</p>
+        </div>
+    </div>
+
+    <script src="Javascript/dev.js" type="module"></script>
+</body>
+</html>
