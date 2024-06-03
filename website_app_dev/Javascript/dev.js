@@ -27,7 +27,7 @@ const gamesDatabase = [
     },
     {
         name: "Helldivers II",
-        image: "images/helldivers2.avif",
+        image: "helldivers2.avif",
         price: 65.00,
         releaseDate: "2024-02-08",
         ageRestriction: "M17+",
@@ -38,7 +38,7 @@ const gamesDatabase = [
     },
     {
         name: "Palworld",
-        image: "images/palworld.jpg",
+        image: "palworld.jpg",
         price: 44.00,
         releaseDate: "2024-01-19",
         ageRestriction: "PG12+",
@@ -49,7 +49,7 @@ const gamesDatabase = [
     },
     {
         name: "Red Dead Redemption II",
-        image: "images/rdr2.avif",
+        image: "rdr2.avif",
         price: 49.00,
         releaseDate: "2018-10-26",
         ageRestriction: "R18+",
@@ -60,7 +60,7 @@ const gamesDatabase = [
     },
     {
         name: "Crysis Remastered",
-        image: "images/crysisremast.avif",
+        image: "crysisremast.avif",
         price: 67.00,
         releaseDate: "2020-07-23",
         ageRestriction: "M17+",
@@ -71,7 +71,7 @@ const gamesDatabase = [
     },
     {
         name: "It Takes Two",
-        image: "images/ittakestwo.webp",
+        image: "ittakestwo.webp",
         price: 59.00,
         releaseDate: "2021-01-25",
         ageRestriction: "PG12+",
@@ -82,7 +82,7 @@ const gamesDatabase = [
     },
     {
         name: "Hogwarts Legacy",
-        image: "images/hogwartslegacy.avif",
+        image: "hogwartslegacy.avif",
         price: 64.00,
         releaseDate: "2023-02-10",
         ageRestriction: "PG12+",
@@ -93,7 +93,7 @@ const gamesDatabase = [
     },
     {
         name: "Stray",
-        image: "images/stray.avif",
+        image: "stray.avif",
         price: 49.00,
         releaseDate: "2022-07-19",
         ageRestriction: "PG12+",
@@ -104,7 +104,7 @@ const gamesDatabase = [
     },
     {
         name: "COD: Modern Warfare II",
-        image: "images/codmw2.jpg",
+        image: "codmw2.jpg",
         price: 74.00,
         releaseDate: "2022-10-28",
         ageRestriction: "R18+",
@@ -115,7 +115,7 @@ const gamesDatabase = [
     },
     {
         name: "Lies of P",
-        image: "images/liesofp.jpg",
+        image: "liesofp.jpg",
         price: 72.00,
         releaseDate: "2023-09-18",
         ageRestriction: "M17+",
@@ -126,7 +126,7 @@ const gamesDatabase = [
     },
     {
         name: "Mortal Kombat 1",
-        image: "images/mortalkombat1.avif",
+        image: "mortalkombat1.avif",
         price: 55.00,
         releaseDate: "2023-09-14",
         ageRestriction: "R18+",
@@ -137,7 +137,7 @@ const gamesDatabase = [
     },
     {
         name: "Cuphead",
-        image: "images/cuphead.webp",
+        image: "cuphead.webp",
         price: 59.00,
         releaseDate: "2017-09-29",
         ageRestriction: "E10+",
@@ -148,7 +148,7 @@ const gamesDatabase = [
     },
     {
         name: "Witcher 3",
-        image: "images/witcher3.avif",
+        image: "witcher3.avif",
         price: 25.00,
         releaseDate: "2015-05-19",
         ageRestriction: "M17+",
@@ -159,7 +159,7 @@ const gamesDatabase = [
     },
     {
         name: "Spiderman Remastered",
-        image: "images/spidermanremast.avif",
+        image: "spidermanremast.avif",
         price: 55.00,
         releaseDate: "2022-08-12",
         ageRestriction: "PG12+",
@@ -170,7 +170,7 @@ const gamesDatabase = [
     },
     {
         name: "Grand Theft Auto 5",
-        image: "images/gta5.webp",
+        image: "gta5.webp",
         price: 37.00,
         releaseDate: "2013-09-17",
         ageRestriction: "R18+",
@@ -181,7 +181,7 @@ const gamesDatabase = [
     },
     {
         name: "Forza Motorsport 2023",
-        image: "images/forzamotorsport5.jpeg",
+        image: "forzamotorsport5.jpeg",
         price: 70.00,
         releaseDate: "2023-10-10",
         ageRestriction: "E10+",
@@ -192,7 +192,7 @@ const gamesDatabase = [
     },
     {
         name: "Farcry 6",
-        image: "images/farcry6.avif",
+        image: "farcry6.avif",
         price: 60.00,
         releaseDate: "2021-10-07",
         ageRestriction: "M17+",
@@ -203,7 +203,7 @@ const gamesDatabase = [
     },
     {
         name: "Alan Wake",
-        image: "images/alanwakeremast.webp",
+        image: "alanwakeremast.webp",
         price: 15.00,
         releaseDate: "2010-05-14",
         ageRestriction: "M17+",
@@ -214,7 +214,7 @@ const gamesDatabase = [
     },
     {
         name: "Alan Wake II",
-        image: "images/alanwake2.avif",
+        image: "alanwake2.avif",
         price: 91.00,
         releaseDate: "2023-10-27",
         ageRestriction: "R18+",
@@ -225,7 +225,7 @@ const gamesDatabase = [
     },
     {
         name: "Planet Zoo",
-        image: "images/planetzoocon.avif",
+        image: "planetzoocon.avif",
         price: 45.00,
         releaseDate: "2019-11-05",
         ageRestriction: "E10+",
