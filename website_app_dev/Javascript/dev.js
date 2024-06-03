@@ -236,7 +236,7 @@ const gamesDatabase = [
     }
   ];
 
-  /*
+/*
 This code sets up an event listener `DOMContentLoaded` 
 to run once the HTML document is fully loaded. It initialises 
 variables to reference HTML elements such as; 
@@ -245,13 +245,13 @@ variables to reference HTML elements such as;
 - Search button
 - Search bar
 - Search results box
-- Console dropdown. 
+- Console dropdown
+- Cart icon
 
 The `createGameCard` function creates game cards with
 the game's details and a click event to navigate to the
 game's product page. 
 
- 
 On the game product page, it retrieves the game name from
 the database, and fills in the page elements with
 the game's details if they exist: 
@@ -262,7 +262,7 @@ the game's details if they exist:
 - gameDescriptionItem
 - gameTrailerItem
 */
-  
+
 document.addEventListener('DOMContentLoaded', () => {
     const popularThisWeekBox = document.getElementById('popular-this-week'); // Finds the element for displaying popular games.
     const newArrivalsBox = document.getElementById('new-arrivals'); // Finds the element for displaying new arrivals.
@@ -369,6 +369,17 @@ document.addEventListener('DOMContentLoaded', () => {
         cartIcon.addEventListener('click', (e) => {
             e.preventDefault(); // Prevents defeualt behaviour of going to homepage and instead shopping cart
             window.location.href = 'Shopping-cart.html';
+        });
+    }
+
+    // Tells sytem to change colour based on the payment method chosen by user.
+    const paymentMethods = document.querySelectorAll('.payment-method');
+    if (paymentMethods) {
+        paymentMethods.forEach(method => {
+            method.addEventListener('click', () => {
+                paymentMethods.forEach(m => m.classList.remove('active'));
+                method.classList.add('active');
+            });
         });
     }
 });
