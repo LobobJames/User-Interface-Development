@@ -16,7 +16,7 @@ Creating a database for all the games. This inlcudes;
 const gamesDatabase = [
     {
         name: "Cyberpunk 2077",
-        image: "images/cyberpunk2077.webp",
+        image: "website_app_dev/images/cyberpunk2077.webp",
         price: 39.00,
         releaseDate: "2020-12-10",
         ageRestriction: "R18+",
