@@ -14,6 +14,11 @@ body {
   padding: 10px 20px;
 }
 
+/* Remove the border only from homepage */
+.homepage .navbar {
+  border: none;
+}
+
 .navbar a {
   color: black; /* Changed to black text like in figma */
   text-decoration: none;
@@ -82,7 +87,7 @@ Left a black url that gives us plain white background
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background: url('../images/hero.png') no-repeat center center/cover;
+  background: url('../images/Group\ 3.png') no-repeat center center/cover;
   color: white;
   text-align: center;
 }
