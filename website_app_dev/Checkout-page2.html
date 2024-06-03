@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Page 2</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+</head>
+<body>
+    <!-- Navbar similar to homepage -->
+    <div class="navbar">
+        <div class="logo">
+            <a href="Homepage.html">MyLogo</a>
+        </div>
+        <ul class="middle-menu">
+            <li><a href="Homepage.html">Home</a></li>
+            <li><a href="Search-results.html?console=PC">PC</a></li>
+            <li><a href="Search-results.html?console=Xbox">Xbox</a></li>
+            <li><a href="Search-results.html?console=Playstation">Playstation</a></li>
+            <li><a href="Search-results.html?console=Nintendo">Nintendo</a></li>
+        </ul>
+        <div class="right-menu">
+            <a href="">Register or Sign In</a>
+            <a href="Shopping-cart.html" id="cart-icon"><img src="images/Cart.png" alt="Cart" style="width: 24px; height: 24px;"></a>
+        </div>
+    </div>
+
+    <!-- 
+        Checkout Section for Payment method options
+    -->
+    <div class="checkout-container">
+        <h1 class="checkout-heading">Checkout</h1>
+        <div class="checkout-section">
+            <h2>E-mail</h2>
+            <input type="email" placeholder="Enter your email">
+        </div>
+        <div class="checkout-section">
+            <h2>Payment Method</h2>
+            <div class="payment-methods">
+                <div class="payment-method">
+                    <input type="radio" id="visa" name="payment" value="Visa">
+                    <label for="visa">VISA</label>
+                </div>
+                <div class="payment-method">
+                    <input type="radio" id="master" name="payment" value="Master">
+                    <label for="master">Master</label>
+                </div>
+                <div class="payment-method">
+                    <input type="radio" id="paypal" name="payment" value="Paypal">
+                    <label for="paypal">Paypal</label>
+                </div>
+                <div class="payment-method">
+                    <input type="radio" id="applepay" name="payment" value="Apple Pay">
+                    <label for="applepay">Apple Pay</label>
+                </div>
+            </div>
+        </div>
+        <div class="checkout-section">
+            <h2>Card Number</h2>
+            <input type="text" placeholder="Enter your card number">
+        </div>
+        <div class="checkout-section">
+            <div class="address-inputs">
+                <div class="expiry-date">
+                    <h2>Expiry Date</h2>
+                    <input type="text" placeholder="MM/YY">
+                </div>
+                <div class="security-code">
+                    <h2>Security Code</h2>
+                    <input type="text" placeholder="CVV">
+                </div>
+            </div>
+        </div>
+        <button class="pay-button" onclick="window.location.href='Thankyou-page.html'">Pay Now</button>
+    </div>
+
+    <!-- Footer Section similar to homepage -->
+    <div class="footer-section">
+        <div class="logo">
+            <img src="images/Footer Logo.png" alt="GD Games Logo">
+            <p>GD Games</p>
+            <p>Enter the Future of Gaming</p>
+        </div>
+        <p>Follow Us</p>
+        <div class="social-icons">
+            <a href=""><img src="images/instagram.png" alt="Instagram"></a>
+            <a href=""><img src="images/twitter.png" alt="Twitter"></a>
+            <a href=""><img src="images/facebook.png" alt="Facebook"></a>
+        </div>
+        <div class="footer-links">
+            <a href="">Privacy Policy</a>
+            <a href="">Terms of Use</a>
+            <a href="">Refund Policy</a>
+            <a href="">Legal</a>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 All Rights Reserved</p>
+        </div>
+    </div>
+
+    <script src="Javascript/dev.js" type="module"></script>
+</body>
+</html>
