@@ -359,7 +359,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const addToCartButton = document.querySelector('.cart-button');
         if (addToCartButton) {
             addToCartButton.addEventListener('click', () => {
-                window.location.href = 'Homepage.html'; // Redirects user to homepage.
+                window.location.href = 'index.html'; // Redirects user to homepage.
             });
         }
     }

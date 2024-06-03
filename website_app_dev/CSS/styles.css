@@ -15,7 +15,7 @@ body {
 }
 
 /* Remove the border only from homepage */
-.homepage .navbar {
+.index .navbar {
   border: none;
 }
 
