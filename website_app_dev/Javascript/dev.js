@@ -263,21 +263,22 @@ the game's details if they exist:
 - gameTrailerItem
 */
   
-  document.addEventListener('DOMContentLoaded', () => {
-    const popularThisWeekBox = document.getElementById('popular-this-week'); //Finds the element for displaying popular games.
-    const newArrivalsBox = document.getElementById('new-arrivals'); //Finds the element for displaying new arrivals.
+document.addEventListener('DOMContentLoaded', () => {
+    const popularThisWeekBox = document.getElementById('popular-this-week'); // Finds the element for displaying popular games.
+    const newArrivalsBox = document.getElementById('new-arrivals'); // Finds the element for displaying new arrivals.
     const searchButton = document.getElementById('search-button'); // Finds the search button element.
-    const searchBar = document.getElementById('search-bar'); //Finds the search bar element.
-    const searchResultsBox = document.getElementById('search-results'); //Finds the element for displaying search results.
-    const consoleDropdown = document.getElementById('console-dropdown'); //Finds the dropdown for selecting console type.
-  
-    const popularGames = gamesDatabase.slice(0, 4); // Gets the first 4 games in the database for popular section
-    const newArrivals = gamesDatabase.slice(4, 12); // Gets the next 8 games in the database for new arrivals sections
-  
-    function createGameCard(game) { //Creates Game Card and display data from Database 
+    const searchBar = document.getElementById('search-bar'); // Finds the search bar element.
+    const searchResultsBox = document.getElementById('search-results'); // Finds the element for displaying search results.
+    const consoleDropdown = document.getElementById('console-dropdown'); // Finds the dropdown for selecting console type.
+    const cartIcon = document.getElementById('cart-icon'); // Finds the cart icon element.
+
+    const popularGames = gamesDatabase.slice(0, 4); // Gets the first 4 games in the database for the popular section.
+    const newArrivals = gamesDatabase.slice(4, 12); // Gets the next 8 games in the database for the new arrivals section.
+
+    function createGameCard(game) { // Creates Game Card and displays data from the Database.
         const gameCard = document.createElement('div');
         gameCard.classList.add('product-item');
-  
+
         gameCard.innerHTML = `
             <img src="${game.image}" alt="${game.name}">
             <div class="product-details">
@@ -286,27 +287,27 @@ the game's details if they exist:
                 <p>${game.console}</p>
             </div>
         `;
-  
-        gameCard.addEventListener('click', () => { //Adds an event listener to on click to take to game’s product page.
+
+        gameCard.addEventListener('click', () => { // Adds an event listener to navigate to the game’s product page on click.
             window.location.href = `Product-page.html?name=${encodeURIComponent(game.name)}`;
         });
-  
+
         return gameCard;
     }
-  
+
     if (popularThisWeekBox) {
-        popularGames.forEach(game => { //Makes a gamecard and add it to Popular this week section
+        popularGames.forEach(game => { // Makes a game card and adds it to the Popular This Week section.
             popularThisWeekBox.appendChild(createGameCard(game));
         });
     }
-  
+
     if (newArrivalsBox) {
-        newArrivals.forEach(game => { //Makes a gamecard and add it to New Arrivals section
+        newArrivals.forEach(game => { // Makes a game card and adds it to the New Arrivals section.
             newArrivalsBox.appendChild(createGameCard(game));
         });
     }
-  
-    if (searchButton) { //Takes in user search input and console selection
+
+    if (searchButton) { // Takes in user search input and console selection.
         searchButton.addEventListener('click', () => {
             const searchInput = searchBar.value.toLowerCase();
             const selectedConsole = consoleDropdown.value;
@@ -314,37 +315,37 @@ the game's details if they exist:
             window.location.href = url;
         });
     }
-  
-    if (searchResultsBox) { //Fetches entered user data and redirects to results page
+
+    if (searchResultsBox) { // Fetches entered user data and redirects to the results page.
         const fetchGame = new URLSearchParams(window.location.search);
         const searchInput = fetchGame.get('search') ? fetchGame.get('search').toLowerCase() : "";
         const consoleType = fetchGame.get('console') ? fetchGame.get('console').toLowerCase() : "";
-  
+
         const filteredGames = gamesDatabase.filter(game => {
             return (searchInput ? game.name.toLowerCase().includes(searchInput) : true) && 
                    (consoleType ? game.console.toLowerCase() === consoleType : true);
         });
-  
+
         filteredGames.forEach(game => {
             searchResultsBox.appendChild(createGameCard(game));
         });
     }
-  
-    //Finds elements to display the data 
+
+    // Finds elements to display the data.
     const gameTitleItem = document.getElementById('game-title');
     const ageRestrictionItem = document.getElementById('age-restriction');
     const releaseDateItem = document.getElementById('release-date');
     const stockStatusItem = document.getElementById('stock-status');
     const gameDescriptionItem = document.getElementById('game-description');
     const gameTrailerItem = document.getElementById('game-trailer');
-  
+
     if (gameTitleItem) {
         const fetchGame = new URLSearchParams(window.location.search);
         const gameName = fetchGame.get('name');
-  
+
         const game = gamesDatabase.find(game => game.name === gameName);
-  
-        if (game) { //Once the game is clicked, the if statements display the respective data about game from database
+
+        if (game) { // Once the game is clicked, the if statements display the respective data about the game from the database.
             gameTitleItem.textContent = game.name;
             ageRestrictionItem.textContent = `Age Restriction: ${game.ageRestriction}`;
             releaseDateItem.textContent = `Release Date: ${game.releaseDate}`;
@@ -353,6 +354,21 @@ the game's details if they exist:
             gameDescriptionItem.textContent = game.description;
             gameTrailerItem.src = game.trailer;
         }
+
+        // Add to Cart button function to take them to homepage whereever on the website.
+        const addToCartButton = document.querySelector('.cart-button');
+        if (addToCartButton) {
+            addToCartButton.addEventListener('click', () => {
+                window.location.href = 'Homepage.html'; // Redirects user to homepage.
+            });
+        }
     }
-  });
-  
+
+    // Redirects user to Shopping Cart page when cart icon is clicked.
+    if (cartIcon) {
+        cartIcon.addEventListener('click', (e) => {
+            e.preventDefault(); // Prevents defeualt behaviour of going to homepage and instead shopping cart
+            window.location.href = 'Shopping-cart.html';
+        });
+    }
+});

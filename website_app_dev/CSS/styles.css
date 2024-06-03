@@ -390,7 +390,6 @@ Left a black url that gives us plain white background
   height: auto;
 }
 
-
 .logo img { /*Duplicate code*/
   width: 100px;
   height: auto;
@@ -518,4 +517,122 @@ Left a black url that gives us plain white background
 
 .product-item:hover h2, .product-item:hover p {
   color: #007BFF; /* Change the hover color */
+}
+
+.cart-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.cart-table th, .cart-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+.cart-table th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+.cart-product-image {
+  width: 100px;
+  height: auto;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.cart-product-image + span {
+  vertical-align: middle;
+}
+
+.cart-summary-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.cart-total {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.checkout-button-container {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.proceed-checkout-button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: white;
+  background-color: #6a0dad; /* Changed to purple */
+  border: none;
+  cursor: pointer;
+}
+
+.proceed-checkout-button:hover {
+  background-color: #5c0db0;
+}
+
+/* Styles for checkout page and its container */
+.checkout-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.checkout-heading {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.checkout-section {
+  margin-bottom: 20px;
+}
+
+.checkout-section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.checkout-section input { /*width might be too much and not responsive on mobile */
+  width: calc(100% - 10px);
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+
+.address-inputs {
+  display: flex;
+  justify-content: space-between;
+}
+
+.address-inputs input {
+  width: calc(48% - 5px);
+}
+
+.continue-button { /* need more design to look like prototype */
+  display: block;
+  width: 100%;
+  padding: 15px;
+  font-size: 1.2rem;
+  color: white;
+  background-color: #6a0dad;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+}
+
+.continue-button:hover {
+  background-color: #5c0db0;
 }
