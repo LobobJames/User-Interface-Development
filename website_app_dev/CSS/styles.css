@@ -492,7 +492,7 @@ Left a black url that gives us plain white background
 }
 
 .cart-button { /* Make it hollow and have same border style from Figma */
-  background-color: #007BFF;
+  background-color: #6a0dad;
 }
 
 .footer-section .logo img { /* Change to % or rem for responsiveness */
