@@ -781,3 +781,7 @@ Left a black url that gives us plain white background
   background-color: #6a0dad;
   color: white; /* colour of text should turn white on hover */
 }
+
+.out-of-stock {
+  color: red;
+}
