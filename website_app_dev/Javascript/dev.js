@@ -33,7 +33,7 @@ const gamesDatabase = [
         ageRestriction: "M17+",
         stockAvailability: false,
         description: "Helldivers 2 is a cooperative twin-stick shooter set in a dystopian future. Players join elite soldiers to defend Super Earth from alien invasions, utilizing teamwork, advanced weaponry, and strategic gameplay across diverse hostile planets. The game emphasizes intense action, tactical cooperation, and procedural missions for replayability.",
-        trailer: "https://www.youtube.com/embed/7i5cLnQ5z80",
+        trailer: "https://www.youtube.com/embed/Ahx35iVJn10?si=QyJSvHj_sMAFe8KX",
         console: "Playstation"
     },
     {
@@ -44,7 +44,7 @@ const gamesDatabase = [
         ageRestriction: "PG12+",
         stockAvailability: true,
         description: "Palworld is an open-world survival game where players capture, train, and battle creatures called Pals. Combining elements of monster-catching with crafting and combat, the game features resource management, base building, and exploration in a vibrant, expansive world, all while utilizing Pals for various tasks and battling other players.",
-        trailer: "https://www.youtube.com/embed/eFbeOxjeIkk",
+        trailer: "https://www.youtube.com/embed/D9w97KSEAOo?si=Hw1ng90agDNEtilD",
         console: "Nintendo"
     },
     {
@@ -66,7 +66,7 @@ const gamesDatabase = [
         ageRestriction: "M17+",
         stockAvailability: true,
         description: "Crysis is a first-person shooter set in a near-future where players assume the role of a soldier with a nanosuit granting superhuman abilities. The game features advanced graphics, destructible environments, and strategic combat against alien and human enemies on a tropical island, emphasizing tactical gameplay and adaptive strategies.",
-        trailer: "https://www.youtube.com/embed/ZnVIsPgPbG4",
+        trailer: "https://www.youtube.com/embed/u6gsOQ8HZAU?si=0DKXlj0tARpOdZzC",
         console: "Nintendo"
     },
     {
@@ -110,7 +110,7 @@ const gamesDatabase = [
         ageRestriction: "R18+",
         stockAvailability: true,
         description: "Call of Duty: Modern Warfare 2 is a first-person shooter set in contemporary warfare. Players engage in intense, cinematic missions across global locations, using advanced weaponry and tactics. The game features a gripping single-player campaign, robust multiplayer modes, and cooperative Spec Ops missions, delivering high-octane action and strategic gameplay.",
-        trailer: "https://www.youtube.com/embed/r72GP1PIZa0",
+        trailer: "https://www.youtube.com/embed/7el5VW1wij0?si=vLh14eP3uQGnyLoU",
         console: "Xbox"
     },
     {
@@ -121,7 +121,7 @@ const gamesDatabase = [
         ageRestriction: "M17+",
         stockAvailability: true,
         description: "Lies of P is an action RPG inspired by the tale of Pinocchio. Players control a puppet named P in a dark, Belle Époque-inspired world, battling grotesque enemies and making choices that affect the narrative. The game features intense combat, intricate weapon crafting, and a hauntingly beautiful environment.",
-        trailer: "https://www.youtube.com/embed/Ju3lQsG5T-w",
+        trailer: "https://www.youtube.com/embed/kXZoKdr-xeo?si=HW2vAJhZracNZekg",
         console: "Playstation"
     },
     {
@@ -132,7 +132,7 @@ const gamesDatabase = [
         ageRestriction: "R18+",
         stockAvailability: true,
         description: "Mortal Kombat 1 is a reboot of the iconic fighting game series, featuring classic characters like Scorpion and Sub-Zero. Set in a new timeline created by the Fire God Liu Kang, the game offers brutal combat, detailed arenas, and cinematic storytelling. Players engage in intense battles with signature fatalities and special moves.",
-        trailer: "https://www.youtube.com/embed/2bVik34nWws",
+        trailer: "https://www.youtube.com/embed/PL6ZdOXlj6g?si=c-ANy9OvLPjGz38l",
         console: "Playstation"
     },
     {
@@ -143,7 +143,7 @@ const gamesDatabase = [
         ageRestriction: "E10+",
         stockAvailability: true,
         description: "Cuphead is a run-and-gun action game with a distinctive 1930s cartoon art style. Players control Cuphead and Mugman as they battle through visually stunning, hand-drawn levels filled with challenging bosses. The game emphasizes precise gameplay, cooperative multiplayer, and a nostalgic aesthetic, offering a unique blend of difficulty and charm.",
-        trailer: "https://www.youtube.com/embed/KWO7GyIi3BQ",
+        trailer: "https://www.youtube.com/embed/NN-9SQXoi50?si=97EF_qL_v9JRuDan",
         console: "Nintendo"
     },
     {
@@ -165,7 +165,7 @@ const gamesDatabase = [
         ageRestriction: "PG12+",
         stockAvailability: true,
         description: "Marvel's Spider-Man (2018) is an open-world action-adventure game where players control Spider-Man as he combats crime in New York City. Featuring fluid web-swinging mechanics, dynamic combat, and a compelling narrative, the game explores both Spider-Man and Peter Parker's lives, offering a richly detailed and immersive superhero experience.",
-        trailer: "https://www.youtube.com/embed/FiVbJYhIXBY",
+        trailer: "https://www.youtube.com/embed/1E051WtpyWg?si=swzS04IOhMIBGMGs",
         console: "Playstation"
     },
     {
@@ -187,7 +187,7 @@ const gamesDatabase = [
         ageRestriction: "E10+",
         stockAvailability: true,
         description: "Forza Motorsport (2023) is a racing simulation game featuring over 500 real-world cars and 20 dynamic tracks. Players can engage in single-player career mode, multiplayer events, and use advanced AI, cutting-edge physics, and real-time ray tracing for a highly immersive experience. The game emphasizes car customization and strategic racing.",
-        trailer: "https://www.youtube.com/embed/fzVhQjGZQso",
+        trailer: "https://www.youtube.com/embed/em4gv1Ietko?si=sQm99Pe5AuMc4BD5",
         console: "Xbox"
     },
     {
@@ -209,7 +209,7 @@ const gamesDatabase = [
         ageRestriction: "M17+",
         stockAvailability: true,
         description: "Alan Wake is a psychological thriller action-adventure game where players control a writer, Alan Wake, searching for his missing wife in the eerie town of Bright Falls. Utilizing light-based combat against shadowy enemies, the game combines narrative-driven exploration, intense atmosphere, and gripping storytelling.",
-        trailer: "https://www.youtube.com/embed/5SoT0P9txh0",
+        trailer: "https://www.youtube.com/embed/cF_YGL3W6CE?si=hDq2qybPz1x8VkVf",
         console: "Xbox"
     },
     {
@@ -220,7 +220,7 @@ const gamesDatabase = [
         ageRestriction: "R18+",
         stockAvailability: true,
         description: "Alan Wake 2 is a survival horror game where players navigate a dark, nightmarish world as an FBI agent and Alan Wake himself. Featuring intense combat with supernatural enemies, intricate puzzles, and a gripping narrative, the game combines atmospheric horror with deep storytelling and strategic gameplay.",
-        trailer: "https://www.youtube.com/embed/xP6tK5tNLJ0",
+        trailer: "https://www.youtube.com/embed/dlQ3FeNu5Yw?si=d6p7DiYPSpNMbYrK",
         console: "Xbox"
     },
     {
@@ -231,7 +231,7 @@ const gamesDatabase = [
         ageRestriction: "E10+",
         stockAvailability: true,
         description: "Planet Zoo is a simulation game where players build and manage a detailed zoo. It features realistic animal behavior, diverse habitats, and complex management tasks. Players design exhibits, care for animals, and balance conservation with visitor satisfaction, creating a unique and engaging experience.",
-        trailer: "https://www.youtube.com/embed/u4_bLn3J2sQ",
+        trailer: "https://www.youtube.com/embed/iPXjBviHVCw?si=lsxajXneGuPW7QyM",
         console: "PC"
     }
   ];
